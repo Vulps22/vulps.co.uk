@@ -30,23 +30,41 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    max-width: 100vw;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
 h2 {
     margin-bottom: 1rem;
 }
 
 footer {
-    position: fixed;
-    bottom: 0vh;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #444;
     color: #fff;
     padding: 1rem;
     text-align: center;
+}
+
+img.banner {
+    width: 100vw;
+    z-index:-1
+}
+
+img.card-pfp {/*card profile picture*/
+    position: absolute; /* Set the "vulps" image position to absolute */
+    top: -43%; /* Align the top border of the image with the top border of the card */
+    left: 50%; /* Move the image 50% to the right */
+    transform: translateX(-50%); /* Center the image horizontally */
+    width: 33%;
+    height: 55%;
+    border-radius: 50%;
+    border-width: var(--bs-border-width);
+    border-style: solid;
+    border-color: var(--bs-border-color-translucent);
+    z-index: 3;
+}
+
+.card {
+    position: relative; /* Set the card's position to relative */
+    padding: 20px;
+    background-color: transparent; /* Set the card's background to transparent */
+    z-index: 1;
 }
