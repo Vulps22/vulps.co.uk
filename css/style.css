@@ -1,4 +1,6 @@
 body {
+    display:flex;
+    flex-direction:column;
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -45,16 +47,41 @@ footer {
 
 img.banner {
     width: 100vw;
+    min-height: 33%;
     z-index:-1
 }
+
+@media (max-width: 992px) {
+    .banner {
+        background-image: url('img/developer-short-dark.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 33vh;
+    }
+
+    img.card-pfp {
+      display: none;
+    }
+
+    #about.card {
+        border: none;
+    }
+    #about .card .card-title {
+        display: none;
+    }
+
+  }
+  
 
 img.card-pfp {/*card profile picture*/
     position: absolute; /* Set the "vulps" image position to absolute */
     top: -43%; /* Align the top border of the image with the top border of the card */
     left: 50%; /* Move the image 50% to the right */
     transform: translateX(-50%); /* Center the image horizontally */
-    width: 33%;
-    height: 55%;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     border-width: var(--bs-border-width);
     border-style: solid;

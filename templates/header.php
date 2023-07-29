@@ -13,8 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php $selectedRoute['title'] ?></title>
 
-      <!-- Open Graph meta tags -->
-      <meta property="og:title" content="Vulps' Developer Portfolio">
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Vulps' Developer Portfolio">
     <meta property="og:description" content="A collection of projects completed and maintained by Vulps">
     <meta property="og:image" content="https://ajmcallister.co.uk/img/developer.png">
     <meta property="og:url" content="https://ajmcallister.co.uk">
@@ -30,5 +30,5 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <main>
+<body class="d-flex flex-column">
+    <main style="min-height: 94.5vh;">
