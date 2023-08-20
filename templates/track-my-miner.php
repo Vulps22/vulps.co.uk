@@ -50,7 +50,7 @@
     </div>
 
     <div class="col offset-lg-1">
-    <p>TrackMyMiner i s a plugin I developed to address the issue of "xray cheaters" using xray packs in Minecraft. The idea for TrackMyMiner came from a server owner who needed a trustworthy solution after the previous plugin's developer proved to be untrustworthy.</p>
+    <p>TrackMyMiner is a plugin I developed to address the issue of "xray cheaters" using xray packs in Minecraft. The idea for TrackMyMiner came from a server owner who needed a trustworthy solution after the previous plugin's developer proved to be untrustworthy.</p>
     <p>I designed this powerful tool to help server administrators catch suspicious players who may be using xray hacks to locate hidden ores. When a player mines an excessive number of ores in a short time, the plugin sends a notification to admins, alerting them to potential foul play. To further investigate, administrators can use the plugin to discreetly "spy" on the player and view their inventories.</p>
     <p>During development, I built TrackMyMiner using Java and integrated it with the Spigot API. The process was challenging, as I had to learn everything from scratch, but the result was a robust and efficient plugin.</p>
     <p>I poured significant effort into understanding Spigot's documentation to ensure a seamless integration of various functionalities into the plugin's architecture.</p>
