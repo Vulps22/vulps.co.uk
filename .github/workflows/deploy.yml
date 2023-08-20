@@ -23,4 +23,4 @@ jobs:
       - name: Deploy to Live Server and install
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no vulps@161.97.68.166 \
-            'cd /var/www/html/ajmcallister && git remote -v && git pull
+            'cd /var/www/html/ajmcallister && git remote -v && git pull'
