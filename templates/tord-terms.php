@@ -1,5 +1,5 @@
 <div class="row align-items-center m-0">
-	<ol>
+	<ol class="pl-5">
 		<li>
 			<h3> Acknowledgment </h3>
 			<p> You the Administrator of this server acknowledge and understand that Truth or Dare Online is an adult
