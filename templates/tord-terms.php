@@ -1,5 +1,5 @@
-<div class="row align-items-center m-0">
-	<ol class="ml-2">
+<div class="row align-items-center m-2">
+	<ol>
 		<li>
 			<h3> Acknowledgment </h3>
 			<p> You the Administrator of this server acknowledge and understand that Truth or Dare Online is an adult
@@ -21,7 +21,6 @@
 				server.</p>
 		</li>
 		<li>
-
 			<h3>Consequences</h3>
 			<p>You understand that your server could be banned from using the bot and reported for breaching Discord's
 				ToS
