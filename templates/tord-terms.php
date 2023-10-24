@@ -1,4 +1,4 @@
-<div class="row align-items-center mt-2 ml-5">
+<div class="row align-items-center m-5">
 	<ol>
 		<li>
 			<h3> Acknowledgment </h3>
