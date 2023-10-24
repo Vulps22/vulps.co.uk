@@ -7,9 +7,10 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<?php foreach ($routes as $url => $route) { ?>
-					<?php if (!$route['hidden']) ?>
+					<?php if (!$route['hidden']) {?>
 					<li class="nav-item"><a href="<?php echo $url; ?>" class="nav-link <?php if ($route['title'] === $selectedRoute['title']) echo 'active' ?>"><?php echo $route['title']; ?></a></li>
-				<?php } ?>
+				<?php }
+			} ?>
 			</ul>
 		</div>
 	</div>
