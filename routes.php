@@ -5,5 +5,5 @@ $routes = array(
     '/vortex-evader' => ['title' => 'Vortex Evader', 'module' => 'vortex-evader.php', 'hidden' => false],
     '/track-my-miner' => ['title' => 'TrackMyMiner', 'module' => 'track-my-miner.php', 'hidden' => false],
     '/steam-bot' => ['title' => 'Steam Bot (TBD)', 'module' => 'steam-bot.php', 'hidden' => false],
-	'/tord/terms' => ['title' => 'Truth Or Dare 18+ Terms of Service', 'module' => 'tord-terms.php', 'hidden' => false],
+	'/tord/terms' => ['title' => 'Truth Or Dare 18+ Terms of Service', 'module' => 'tord-terms.php', 'hidden' => true],
 );
