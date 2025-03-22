@@ -4,4 +4,4 @@ My own portfolio website showing off software projects I have maintained, both c
 
 ---
 
-[![CodeKeepers Logo](https://vulps.co.uk/raw/img/codekeepers-text.png "Join CodeKeepers")](https://discord.gg/uhvQpVmxeK)
+[<img src="https://vulps.co.uk/raw/img/codekeepers-text.png" alt="Join CodeKeepers" height="75"/>](https://discord.gg/uhvQpVmxeK)
