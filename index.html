@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulps | Software Developer Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* A slightly softer black */
+        }
+        /* Style for the hero section background */
+        .hero-bg {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 1)), url('https://raw.githubusercontent.com/Vulps22/vulps.co.uk/de7b1208499e2d153b2fe8a65779ff880013987f/img/web-banner.png');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <img src="https://raw.githubusercontent.com/Vulps22/vulps.co.uk/de7b1208499e2d153b2fe8a65779ff880013987f/img/vulps.jpg" alt="Vulps Logo" class="w-10 h-10 rounded-full border-2 border-slate-600">
+                <span class="text-xl font-bold text-white">Vulps</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                <a href="#projects" class="text-gray-300 hover:text-white transition-colors duration-300">Projects</a>
+                <a href="https://discord.gg/rPkJyEnSHv" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">
+                    Contact
+                </a>
+            </div>
+            <!-- Mobile Menu Button (optional) -->
+             <div class="md:hidden">
+                <a href="https://discord.gg/rPkJyEnSHv" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">
+                    Contact
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white">
+            <div class="container mx-auto px-6 py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Software & Web Developer</h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    Creating robust, efficient solutions from Minecraft plugins to market-leading enterprise software.
+                </p>
+                <a href="#projects" class="bg-white text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-gray-200 transition-transform duration-300 inline-block transform hover:scale-105">
+                    View My Work
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-24 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3 text-center">
+                        <img src="https://raw.githubusercontent.com/Vulps22/vulps.co.uk/de7b1208499e2d153b2fe8a65779ff880013987f/img/vulps.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto mb-4 border-4 border-gray-700 shadow-lg">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+                        <p class="text-gray-300 mb-4">
+                            I am a skilled developer with years of experience, both professional and personal, in a multitude of languages and technologies. My experience ranges from Minecraft plugins to <strong>market leading</strong> online quoting software.
+                        </p>
+                        <p class="text-gray-300">
+                            While most of my experience has thus far been web-based, I ultimately hope to break into app development and focus my career on Swift and iOS development. I'm passionate about clean code, intuitive user experiences, and continuously learning new things.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-white text-center mb-12">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Project Card 1: Vortex Evader -->
+                    <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/vortex-evader.png" alt="Vortex Evader game" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Vortex Evader</h3>
+                            <p class="text-gray-400 mb-4">
+                                A fast-paced arcade game created from scratch in <strong>Java</strong>. What started as a refresher project evolved into a fully-featured game with custom mechanics and design.
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="projects/vortex-evader.html" class="w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: TrackMyMiner -->
+                    <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/trackMyMiner.png" alt="TrackMyMiner plugin" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">TrackMyMiner</h3>
+                            <p class="text-gray-400 mb-4">
+                                A <strong>Minecraft (Spigot)</strong> plugin to help server admins detect and monitor players using "x-ray" cheats by analyzing mining patterns and statistics.
+                            </p>
+                             <div class="flex space-x-4">
+                                <a href="projects/trackmyminer.html" class="w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: LFGameSync -->
+                    <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/lfgamesync-banner.png" alt="LFGameSync Banner" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">LFGameSync</h3>
+                            <p class="text-gray-400 mb-4">
+                                A <strong>node.js</strong> powered LFG discord bot that allows users to sync their game accounts with their Discord profile. It supports multiple games and provides a seamless way to find teammates based on game stats and preferences.
+                            </p>
+                             <div class="flex space-x-4">
+                                <a href="https://lfgamesync.co.uk" class="w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-400">
+            <p>&copy; <?php echo date("Y"); ?> Vulps. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackMyMiner | Vulps Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+        }
+        /* Custom styles for the purple buttons to match the new design */
+        .btn-primary {
+            background-color: #6366F1;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #4F46E5;
+        }
+        .btn-secondary {
+            background-color: #374151;
+            transition: background-color 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #4B5563;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center space-x-3">
+                <img src="../img/vulps.jpg" alt="Vulps Logo" class="w-10 h-10 rounded-full">
+                <span class="text-xl font-bold text-white">Vulps</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="../index.html#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                <a href="../index.html#projects" class="text-gray-300 hover:text-white transition-colors duration-300">Projects</a>
+                <a href="https://discord.gg/rPkJyEnSHv" target="_blank" class="btn-primary text-white font-medium py-2 px-4 rounded-lg">
+                    Contact
+                </a>
+            </div>
+            <div class="md:hidden">
+                <a href="../index.html" class="text-gray-300 hover:text-white transition-colors duration-300">
+                    Back to Home
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Header -->
+        <section class="bg-gray-900 py-16">
+            <div class="container mx-auto px-6 text-center">
+                <img src="../img/TrackMyMiner.png" alt="TrackMyMiner Banner" class="w-48 mx-auto mb-6 rounded-lg shadow-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-2">TrackMyMiner</h1>
+                <p class="text-lg text-indigo-400">A Minecraft Plugin for Fair Play</p>
+            </div>
+        </section>
+
+        <!-- Project Content -->
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                
+                <!-- Main Description Column -->
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold text-white mb-6">The Problem of X-Ray Cheating</h2>
+                    <div class="space-y-4 text-gray-300 leading-relaxed">
+                        <p>
+                            TrackMyMiner is a powerful tool I developed to address the persistent issue of "x-ray cheaters" in Minecraft. The idea came from a server owner who needed a trustworthy anti-cheat solution after a previous plugin's developer proved to be unreliable.
+                        </p>
+                        <p>
+                            I designed this plugin to help server administrators catch suspicious players who use resource packs or mods to locate valuable ores unfairly. When a player mines an excessive number of ores in a short time, the plugin sends a discreet notification to admins, alerting them to potential foul play.
+                        </p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mt-10 mb-6">Development & Features</h3>
+                    <div class="space-y-4 text-gray-300 leading-relaxed">
+                        <p>
+                            Built entirely in <strong>Java</strong> and integrated with the <strong>Spigot API</strong>, this project was a fantastic learning experience. The process required a deep dive into Spigot's documentation to implement robust features like:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 pl-4">
+                            <li><strong>Statistical Ore Tracking:</strong> Monitors mining rates per player.</li>
+                            <li><strong>Admin Alerts:</strong> Configurable notifications for suspicious activity.</li>
+                            <li><strong>Inventory Snooping:</strong> Allows admins to discreetly view a player's inventory to verify findings.</li>
+                        </ul>
+                        <p>
+                           The plugin's usage and impact can be tracked live on <a href="https://bstats.org/plugin/bukkit/TrackMyMiner/18987" target="_blank" class="text-indigo-400 hover:underline">bStats</a>. As the developer, I am committed to its ongoing maintenance and compatibility with future Minecraft and Spigot releases.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sidebar Column -->
+                <aside>
+                    <div class="bg-gray-900 rounded-lg p-6 sticky top-28 shadow-xl">
+                        <h3 class="text-2xl font-bold text-white mb-4">Live Stats</h3>
+                        <div class="grid grid-cols-2 gap-4 text-center mb-6">
+                            <div>
+                                <span id="downloads-count" class="text-3xl font-bold text-indigo-400">...</span>
+                                <p class="text-sm text-gray-400">Downloads</p>
+                            </div>
+                            <div>
+                                <span id="rating-value" class="text-3xl font-bold text-indigo-400">...</span>
+                                <p class="text-sm text-gray-400">Rating</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col space-y-3">
+                           <a href="https://www.spigotmc.org/resources/trackmyminer.110943/" target="_blank" class="w-full text-center btn-primary text-white font-medium py-3 px-4 rounded-lg">Download from SpigotMC</a>
+                           <a href="https://github.com/Vulps22/TrackMyMiner" target="_blank" class="w-full text-center btn-secondary text-white font-medium py-3 px-4 rounded-lg">View Source Code</a>
+                        </div>
+                         
+                        <div class="mt-8 border-t border-gray-700 pt-6">
+                            <h4 class="text-xl font-semibold text-white mb-4">Project Details</h4>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 mr-3 text-indigo-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                    <span><strong>Language:</strong> Java</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 mr-3 text-indigo-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z"></path></svg>
+                                    <span><strong>Platform:</strong> Spigot / Bukkit</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 mr-3 text-indigo-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <span><strong>Status:</strong> Actively Maintained</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-400">
+            <p>&copy; 2024 Vulps. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fetch live data from the Spiget API
+        document.addEventListener('DOMContentLoaded', () => {
+            const resourceId = '110943';
+            const apiUrl = `https://api.spiget.org/v2/resources/${resourceId}`;
+
+            const downloadsEl = document.getElementById('downloads-count');
+            const ratingEl = document.getElementById('rating-value');
+
+            // Fetch main resource data
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data) {
+                        downloadsEl.textContent = data.downloads.toLocaleString() || 'N/A';
+                        ratingEl.textContent = data.rating ? `${data.rating.average.toFixed(1)}/5` : 'N/A';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching Spiget data:', error);
+                    downloadsEl.textContent = 'Error';
+                    ratingEl.textContent = 'Error';
+                });
+        });
+    </script>
+
+</body>
+</html>
